@@ -1,0 +1,20 @@
+.section {
+  padding-block: var(--section-spacing);
+  background-color: var(--bg-primary);
+}
+
+.section--bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.section--spacing-sm {
+  padding-block: clamp(2rem, 4vw, 4rem);
+}
+
+.section--spacing-lg {
+  padding-block: clamp(5rem, 10vw, 10rem);
+}
+
+.section--spacing-none {
+  padding-block: 0;
+}

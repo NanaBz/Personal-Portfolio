@@ -1,0 +1,24 @@
+.selected-work__intro {
+  padding-bottom: clamp(var(--space-8), 4vw, var(--space-12));
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.selected-work__heading {
+  max-width: 18ch;
+  margin-top: var(--space-6);
+}
+
+.selected-work__lead {
+  margin-top: var(--space-6);
+  max-width: 44ch;
+}
+
+.selected-work__projects {
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .selected-work__heading {
+    max-width: none;
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343 361" fill="none">
+  <rect width="343" height="361" fill="#141418"/>
+  <rect x="1" y="1" width="341" height="359" stroke="#f2efe9" stroke-opacity="0.08" stroke-width="2"/>
+  <rect x="72" y="96" width="199" height="169" rx="8" stroke="#f2efe9" stroke-opacity="0.12" stroke-width="1.5" fill="none"/>
+  <rect x="96" y="120" width="151" height="121" rx="6" stroke="#e8a849" stroke-opacity="0.25" stroke-width="1.5" fill="none"/>
+  <text x="171" y="330" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6b6762" letter-spacing="0.08em">STORY VISUAL</text>
+</svg>

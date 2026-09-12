@@ -1,0 +1,87 @@
+/* Motion utilities — meaningful, restrained */
+
+.transition-base {
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-duration: var(--duration-normal);
+  transition-timing-function: var(--ease-out);
+}
+
+.transition-fast {
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--ease-out);
+}
+
+.hover-lift {
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+.hover-lift:active {
+  transform: translateY(0);
+}
+
+/* Scroll reveal — applied via class, activated by JS or future intersection observer */
+.reveal {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition:
+    opacity var(--duration-reveal) var(--ease-out),
+    transform var(--duration-reveal) var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero entrance — above-the-fold stagger on load */
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-entrance {
+  opacity: 0;
+  animation: hero-fade-up var(--duration-reveal) var(--ease-out) forwards;
+}
+
+.hero-entrance--1 { animation-delay: 80ms; }
+.hero-entrance--2 { animation-delay: 160ms; }
+.hero-entrance--3 { animation-delay: 240ms; }
+.hero-entrance--4 { animation-delay: 360ms; }
+.hero-entrance--5 { animation-delay: 480ms; }
+.hero-entrance--6 { animation-delay: 560ms; }
+.hero-entrance--7 { animation-delay: 640ms; }
+
+/* Reduced motion: disable non-essential animation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal,
+  .hero-entrance {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .hover-lift:hover {
+    transform: none;
+  }
+}

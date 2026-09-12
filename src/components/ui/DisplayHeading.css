@@ -1,0 +1,11 @@
+/* DisplayHeading styles are primarily in typography.css.
+   Component-specific overrides live here. */
+
+.display-heading em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.display-heading + .body-text {
+  margin-top: var(--space-6);
+}

@@ -1,0 +1,45 @@
+.image-frame {
+  margin: 0;
+}
+
+.image-frame__wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-secondary);
+}
+
+.image-frame__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-frame--portrait .image-frame__wrapper {
+  aspect-ratio: 4 / 5;
+}
+
+.image-frame--landscape .image-frame__wrapper {
+  aspect-ratio: 4 / 3;
+}
+
+.image-frame--square .image-frame__wrapper {
+  aspect-ratio: 1 / 1;
+}
+
+.image-frame__wrapper:hover .image-frame__img {
+  transform: scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-frame__wrapper:hover .image-frame__img {
+    transform: none;
+  }
+}
+
+.image-frame__caption {
+  margin-top: var(--space-3);
+  color: var(--text-muted);
+}

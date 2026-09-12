@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" fill="none">
+  <rect width="560" height="360" fill="#141418"/>
+  <rect x="1" y="1" width="558" height="358" stroke="#f2efe9" stroke-opacity="0.08"/>
+  <text x="40" y="80" font-family="system-ui,sans-serif" font-size="72" font-weight="800" fill="#f2efe9" opacity="0.12">02</text>
+  <text x="40" y="200" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="#f2efe9" opacity="0.9">Ancora</text>
+  <line x1="40" y1="220" x2="120" y2="220" stroke="#e8a849" stroke-width="2" opacity="0.6"/>
+  <text x="40" y="260" font-family="system-ui,sans-serif" font-size="13" fill="#6b6762" letter-spacing="0.06em">MEDICATION � REMINDERS � CARE</text>
+</svg>

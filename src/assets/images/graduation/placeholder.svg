@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#141418"/>
+  <rect x="1" y="1" width="398" height="298" stroke="#f2efe9" stroke-opacity="0.08" stroke-width="2"/>
+  <polygon points="200,80 280,120 200,160 120,120" stroke="#f2efe9" stroke-opacity="0.15" stroke-width="2" fill="none"/>
+  <line x1="200" y1="160" x2="200" y2="200" stroke="#f2efe9" stroke-opacity="0.15" stroke-width="2"/>
+  <text x="200" y="260" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#6b6762" letter-spacing="0.08em">GRADUATION PHOTO</text>
+</svg>
