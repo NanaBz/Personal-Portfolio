@@ -66,30 +66,41 @@ export const projects = [
     imageFit: 'logo',
   },
   {
-    id: 'ancora',
+    id: 'spikesense',
     number: '03',
-    title: 'Ancora',
-    category: 'Care + System Thinking',
+    title: 'SpikeSense',
+    category: 'Final Year Project · Digital Wellness',
     hook:
-      'A reminder helps you remember. But how do you know the medication was actually taken?',
+      'Screen time tells you how long you were on your phone. It doesn\u2019t always tell you when digital use stops feeling healthy.',
     summary:
-      'A medication tracking app exploring the gap between reminders and accountability — with caretaker support and photo verification.',
+      'SpikeSense is my final-year project — a mobile digital wellness system that detects patterns of digital overstimulation in students and responds with gentle, personalized nudges through Spike, the in-app assistant.',
     problem:
-      'Remembering to take medication is one challenge. Knowing whether someone actually took it — especially when care involves another person — can be a separate one.',
+      'For many students, heavy phone use is not just about hours logged. It is about switching between apps, losing focus, and feeling mentally overloaded without a clear moment to pause. Generic screen-time limits rarely explain why a session feels draining or what to do next.',
     idea:
-      'Technology could do more than send alerts. It could help bridge the space between a reminder and the confidence that care actually happened.',
+      'Combine usage tracking with intelligent pattern recognition — app-switching frequency, session duration, and category mix — then surface support through an assistant that can educate, motivate, or gently restrict depending on the student\u2019s chosen mode.',
     build:
-      'Ancora is a medication tracking and reminder application with a caretaker system and photo verification — designed to give patients and caregivers greater confidence that medication was taken, without replacing medical advice or clinical oversight.',
+      'SpikeSense is a cross-platform React Native + Expo app backed by a Python Flask API. The system analyzes usage patterns with rule-based detection and optional lightweight ML, calculates focus scores, and generates context-aware nudges through Spike. Students can work in Supportive, Motivational, Restrictive, or Balanced modes, with dashboards for daily and weekly trends, category breakdowns, and streak-style progress.\n\nThe project was developed as our team final-year capstone — combining mobile experience design, pattern detection, nudging logic, and privacy-first data handling in one cohesive system.',
     learning:
-      'Some problems aren\u2019t solved by adding more notifications. They require thinking about trust, accountability, and the human relationship behind the system.',
-    technologies: ['Flutter', 'Firebase'],
+      'SpikeSense stretched me beyond a single feature demo. It asked how you design for behavior, privacy, and trust at the same time — local-first data handling, transparent nudges, and an assistant personality that helps instead of shaming. It also reinforced why I am moving toward Data Science: the interesting question was never only how long someone scrolled, but what the pattern meant and what to do about it.',
+    technologies: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Python',
+      'Flask',
+      'PostgreSQL',
+      'SQLite',
+      'Machine Learning',
+    ],
     links: {
-      github: 'https://github.com/NanaBz/Ancora',
+      github: 'https://github.com/Benedict-nds/Spikesense',
     },
-    image: ancoraVisual,
-    imageAlt: 'Ancora — medication adherence app landing screen',
+    image: spikeAssistant,
+    imageAlt: 'Spike — SpikeSense digital wellness assistant',
     imageFit: 'contain',
   },
+
+
   {
     id: 'feastflow',
     number: '04',
@@ -169,37 +180,28 @@ export const projects = [
     imageFit: 'contain',
   },
   {
-    id: 'spikesense',
+    id: 'ancora',
     number: '07',
-    title: 'SpikeSense',
-    category: 'Final Year Project · Digital Wellness',
+    title: 'Ancora',
+    category: 'Care + System Thinking',
     hook:
-      'Screen time tells you how long you were on your phone. It doesn\u2019t always tell you when digital use stops feeling healthy.',
+      'A reminder helps you remember. But how do you know the medication was actually taken?',
     summary:
-      'SpikeSense is my final-year project — a mobile digital wellness system that detects patterns of digital overstimulation in students and responds with gentle, personalized nudges through Spike, the in-app assistant.',
+      'A medication tracking app exploring the gap between reminders and accountability — with caretaker support and photo verification.',
     problem:
-      'For many students, heavy phone use is not just about hours logged. It is about switching between apps, losing focus, and feeling mentally overloaded without a clear moment to pause. Generic screen-time limits rarely explain why a session feels draining or what to do next.',
+      'Remembering to take medication is one challenge. Knowing whether someone actually took it — especially when care involves another person — can be a separate one.',
     idea:
-      'Combine usage tracking with intelligent pattern recognition — app-switching frequency, session duration, and category mix — then surface support through an assistant that can educate, motivate, or gently restrict depending on the student\u2019s chosen mode.',
+      'Technology could do more than send alerts. It could help bridge the space between a reminder and the confidence that care actually happened.',
     build:
-      'SpikeSense is a cross-platform React Native + Expo app backed by a Python Flask API. The system analyzes usage patterns with rule-based detection and optional lightweight ML, calculates focus scores, and generates context-aware nudges through Spike. Students can work in Supportive, Motivational, Restrictive, or Balanced modes, with dashboards for daily and weekly trends, category breakdowns, and streak-style progress.\n\nThe project was developed as our team final-year capstone — combining mobile experience design, pattern detection, nudging logic, and privacy-first data handling in one cohesive system.',
+      'Ancora is a medication tracking and reminder application with a caretaker system and photo verification — designed to give patients and caregivers greater confidence that medication was taken, without replacing medical advice or clinical oversight.',
     learning:
-      'SpikeSense stretched me beyond a single feature demo. It asked how you design for behavior, privacy, and trust at the same time — local-first data handling, transparent nudges, and an assistant personality that helps instead of shaming. It also reinforced why I am moving toward Data Science: the interesting question was never only how long someone scrolled, but what the pattern meant and what to do about it.',
-    technologies: [
-      'React Native',
-      'Expo',
-      'TypeScript',
-      'Python',
-      'Flask',
-      'PostgreSQL',
-      'SQLite',
-      'Machine Learning',
-    ],
+      'Some problems aren\u2019t solved by adding more notifications. They require thinking about trust, accountability, and the human relationship behind the system.',
+    technologies: ['Flutter', 'Firebase'],
     links: {
-      github: 'https://github.com/Benedict-nds/Spikesense',
+      github: 'https://github.com/NanaBz/Ancora',
     },
-    image: spikeAssistant,
-    imageAlt: 'Spike — SpikeSense digital wellness assistant',
+    image: ancoraVisual,
+    imageAlt: 'Ancora — medication adherence app landing screen',
     imageFit: 'contain',
   },
 ];
