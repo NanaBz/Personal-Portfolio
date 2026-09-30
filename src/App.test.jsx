@@ -47,7 +47,7 @@ describe('App', () => {
     expect(
       screen.getByRole('heading', { level: 2, name: /some ideas stayed ideas/i }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/6 projects — each one starting with a problem/i)).toBeInTheDocument();
+    expect(screen.getByText(/7 projects — each one starting with a problem/i)).toBeInTheDocument();
 
     const selectedWork = document.getElementById('selected-work');
     const projectTitles = within(selectedWork)
@@ -61,7 +61,13 @@ describe('App', () => {
       'FeastFlow',
       'NovaForge',
       'Fake News Detector',
+      'SpikeSense',
     ]);
+  });
+
+  it('renders a back to top control', () => {
+    render(<App />);
+    expect(screen.getByRole('link', { name: 'Back to top' })).toBeInTheDocument();
   });
 
   it('renders phase 6 sections', () => {

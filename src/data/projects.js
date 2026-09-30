@@ -4,6 +4,7 @@ import ancoraVisual from '../assets/images/projects/ancora/visual.png';
 import feastflowLogo from '../assets/images/projects/feastflow/logo.png';
 import novaforgeLogo from '../assets/images/projects/novaforge/logo.png';
 import fakeNewsVisual from '../assets/images/projects/fake-news-detector/visual.png';
+import spikeAssistant from '../assets/images/projects/spikesense/spike.png';
 
 export const projects = [
   {
@@ -165,6 +166,40 @@ export const projects = [
     },
     image: fakeNewsVisual,
     imageAlt: 'Fake News Detector — text classification interface',
+    imageFit: 'contain',
+  },
+  {
+    id: 'spikesense',
+    number: '07',
+    title: 'SpikeSense',
+    category: 'Final Year Project · Digital Wellness',
+    hook:
+      'Screen time tells you how long you were on your phone. It doesn\u2019t always tell you when digital use stops feeling healthy.',
+    summary:
+      'SpikeSense is my final-year project — a mobile digital wellness system that detects patterns of digital overstimulation in students and responds with gentle, personalized nudges through Spike, the in-app assistant.',
+    problem:
+      'For many students, heavy phone use is not just about hours logged. It is about switching between apps, losing focus, and feeling mentally overloaded without a clear moment to pause. Generic screen-time limits rarely explain why a session feels draining or what to do next.',
+    idea:
+      'Combine usage tracking with intelligent pattern recognition — app-switching frequency, session duration, and category mix — then surface support through an assistant that can educate, motivate, or gently restrict depending on the student\u2019s chosen mode.',
+    build:
+      'SpikeSense is a cross-platform React Native + Expo app backed by a Python Flask API. The system analyzes usage patterns with rule-based detection and optional lightweight ML, calculates focus scores, and generates context-aware nudges through Spike. Students can work in Supportive, Motivational, Restrictive, or Balanced modes, with dashboards for daily and weekly trends, category breakdowns, and streak-style progress.\n\nThe project was developed as our team final-year capstone — combining mobile experience design, pattern detection, nudging logic, and privacy-first data handling in one cohesive system.',
+    learning:
+      'SpikeSense stretched me beyond a single feature demo. It asked how you design for behavior, privacy, and trust at the same time — local-first data handling, transparent nudges, and an assistant personality that helps instead of shaming. It also reinforced why I am moving toward Data Science: the interesting question was never only how long someone scrolled, but what the pattern meant and what to do about it.',
+    technologies: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Python',
+      'Flask',
+      'PostgreSQL',
+      'SQLite',
+      'Machine Learning',
+    ],
+    links: {
+      github: 'https://github.com/Benedict-nds/Spikesense',
+    },
+    image: spikeAssistant,
+    imageAlt: 'Spike — SpikeSense digital wellness assistant',
     imageFit: 'contain',
   },
 ];

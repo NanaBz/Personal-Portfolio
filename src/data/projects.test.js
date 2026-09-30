@@ -10,6 +10,7 @@ describe('projects', () => {
       '04',
       '05',
       '06',
+      '07',
     ]);
     expect(projects.map((project) => project.id)).toEqual([
       'league-scheduler',
@@ -18,6 +19,7 @@ describe('projects', () => {
       'feastflow',
       'novaforge',
       'fake-news-detector',
+      'spikesense',
     ]);
   });
 
@@ -36,5 +38,14 @@ describe('projects', () => {
     expect(aetherqore.imageFit).toBe('logo');
     expect(aetherqore.imageAlt).toMatch(/logo/i);
     expect(aetherqore.build).toMatch(/planned AI layer/i);
+  });
+
+  it('adds SpikeSense as the final-year capstone with verified repo link', () => {
+    const spikesense = projects[6];
+    expect(spikesense.title).toBe('SpikeSense');
+    expect(spikesense.number).toBe('07');
+    expect(spikesense.links.github).toBe('https://github.com/Benedict-nds/Spikesense');
+    expect(spikesense.links.live).toBeUndefined();
+    expect(spikesense.imageAlt).toMatch(/Spike/i);
   });
 });
